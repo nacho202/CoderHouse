@@ -127,6 +127,50 @@
     border-radius:  4px;
     margin: 10px 0;
 }
+@media (max-width: 1049px){
+    .productos-home figure figcaption{
+        font-size: 1.3em;
+    } 
+    .productos-home figure p{
+        font-size: 1.01em;  
+    }
+}
+@media (max-width: 972px) {
+    .productos-home{
+        padding: 20px 0px;
+      }
+      .productos-home figure p{
+        font-size: 1em;  
+    }
+    .productos-home figure figcaption{
+        font-size: 1.2em;
+    } 
+}
+@media (max-width: 890px) {
+    .productos-home figure{
+        width: 48%;
+    }
+}
+@media (max-width: 590px) {
+
+    .productos-home figure figcaption{
+        font-size: 1.1em;
+    } 
+    .texto1 p{
+        font-size: 1em;
+    }
+    .texto1 h2{
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 565px) {
+    .productos-home figure{
+        width: 100%;
+    }
+    .productos-home figure figcaption{
+        font-size: 1.2em;
+    } 
+}
 /*Termina CSS index*/
 
 /*Empieza CSS promociones*/
@@ -170,6 +214,45 @@
     border-radius:  4px;
     margin: 10px 0;
 }
+@media (max-width: 1049px) {
+
+    .productos-promociones figure figcaption{
+        font-size: 1.3em;
+    } 
+    .productos-promociones figure p{
+        font-size: 1.01em;  
+    }
+}
+@media (max-width: 972px) {
+    .productos-promociones{
+        padding: 20px 0px;
+      }
+      .productos-promociones figure p{
+        font-size: 1em;  
+    }
+    .productos-promociones figure figcaption{
+        font-size: 1.2em;
+    } 
+}
+@media (max-width: 890px) {
+    .productos-promociones figure{
+        width: 48%;
+    }
+}
+@media (max-width: 572px) {
+
+    .productos-promociones figure figcaption{
+        font-size: 1.1em;
+    } 
+}
+@media (max-width: 540px) {
+    .productos-promociones figure{
+        width: 100%;
+    }
+    .productos-promociones figure figcaption{
+        font-size: 1.2em;
+    } 
+}
 /*Termina CSS promociones*/
 
 /*Empieza CSS nosotros*/
@@ -179,17 +262,16 @@
 .h1-header-nosotros{
     text-align: center;
     padding-top: 15px;
-    width: 300px;
-    height: 50px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 .p-header-nosotros{
-    width: 600px;
-    height: 100px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+    text-align: center;
 }
 .equipo-nosotros H2{
     text-align: center;
@@ -198,14 +280,63 @@
 }
 .equipo-nosotros article{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     padding-bottom: 40px;
     padding-left: 30px;
+    text-align: center;
+    
 }
 .equipo-nosotros article img{
-    width: 80%;
+    width: 100%;
 }
-
+.equipo-nosotros article p{
+    padding-top: 15px;
+}
+@media (max-width: 900px) {
+    .equipo-nosotros article p{
+        font-size: 1em;
+    }
+    .equipo-nosotros{
+        padding: 20px 0px 20px 0px;
+    }
+    .h1-header-nosotros{
+        font-size: 1.6em;
+    }
+    .p-header-nosotros{
+        font-size: 1em;
+    }
+}
+@media (max-width: 650px) {
+    .equipo-nosotros article p{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 600px) {
+    .equipo-nosotros article p{
+        font-size: 1em;
+    }
+    .equipo-nosotros article{
+        width: 48%;
+    }
+}
+@media (max-width: 500px) {
+    .equipo-nosotros article p{
+        font-size: 1.1em;
+    }
+    .equipo-nosotros article{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .h1-header-nosotros{
+        font-size: 1.3em;
+    }
+    .p-header-nosotros{
+        margin-left: 70px;
+        margin-right: 10px;
+    }
+    
+}
 /*Termina CSS Nosotros*/
 /*Comienza CSS Contacto*/
 .email-contacto{
