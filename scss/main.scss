@@ -1,0 +1,136 @@
+//partials
+@import "_nav";
+@import "_vars";
+@import "_commons";
+@import "_footer";
+@import "_promociones";
+@import "_productos";
+@import "_nosotros";
+@import "_contacto";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+//Empieza CSS index
+//Texto 1
+.foto-header-index{
+    width: 100%;
+}
+.texto1{
+    background-color: $texto1Color;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 0%;
+    }
+}
+//Productos destacados
+.fondo-index{
+    background-color: $backgroundColor;
+    
+}
+.indumentaria{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+// Productos Destacados de la Home 
+.productos-home{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure{
+        width: 30%;
+        border: solid 1px $mainColor;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        img{
+            width: 40%;
+        }
+        figcaption{
+            color: $figcaptionColor;
+            font-size: $figcaptionText;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: $buttonColor;
+            padding: 6px;
+            color: $white;
+            border-radius:  4px;
+            margin: 10px 0;
+            &:hover{
+                background-color: $buttonHoverColor;
+            } 
+            &:active{
+                background-color: $secondaryColor;
+                color: black;
+            }
+        }
+    }
+}
+@media (max-width: 1049px){
+    .productos-home{
+        figure{
+            figcaption{
+                font-size: $textLg; 
+            }
+            p{
+                font-size: $textMd;
+            }
+        }
+    }
+}
+@media (max-width: 972px){
+    .productos-home{
+        figure{
+            figcaption{
+                font-size: $textMd; 
+            }
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+}
+@media (max-width: 890px) {
+    .productos-home{
+
+        figure{
+            width: 48%;
+        }
+    }
+}
+@media (max-width: 590px) {
+        .texto1{
+            p{
+                font-size: $textSm;
+            }
+            h2{
+                font-size: $textLg;
+            }
+        }
+    }
+@media (max-width: 565px) {
+    .productos-home{ 
+        figure{
+            width: 100%;
+            figcaption{
+                font-size: $textMd; 
+            }
+        }
+    }
+}
+//Termina CSS index

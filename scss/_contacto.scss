@@ -1,0 +1,32 @@
+@import "_vars";
+//Comienza CSS Contacto
+.email-contacto{
+    width: 70%;
+}
+
+.mensaje-contacto{
+    width: 100%;
+}
+
+.jugador-ok{
+    width: 100%;
+}
+.boton-contacto{
+    &:hover{
+        background-color: $grisColor;
+    }
+}
+.h1-header-contacto{
+    padding-top: 35px;
+    padding-left: 20px;
+}
+.h3-header-contacto{
+    padding-left: 40px;
+}
+@media (max-width: 786px) {
+    .jugador-ok{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+//Termina CSS Contacto

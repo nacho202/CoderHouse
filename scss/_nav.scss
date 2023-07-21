@@ -1,0 +1,17 @@
+@import "_vars";
+
+.botonera{
+    background-color: $navColor;
+    a{
+        color: black;
+        font-weight: $textRegular;
+    }
+}
+.boton-buscar{
+    border-color: $grisColor ;
+    color: $keyColor;
+    &:hover{
+        background-color: $keyColor;
+        border: $keyColor;
+    }
+}

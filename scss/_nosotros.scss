@@ -1,0 +1,94 @@
+@import "_vars";
+//Empieza CSS nosotros
+.header-nosotros{
+    background-color: antiquewhite;
+}
+.h1-header-nosotros{
+    text-align: center;
+    padding-top: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p-header-nosotros{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    text-align: center;
+}
+.equipo-nosotros{
+    h2{
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 40px;  
+    }
+    article{
+        display: inline-block;
+        width: 32%;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        text-align: center;
+        img{
+            width: 100%;  
+        }
+        p{
+            padding-top: 15px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .equipo-nosotros{
+        padding: 20px 0px 20px 0px;
+        article{
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+    .h1-header-nosotros{
+        font-size: $textXl;
+    }
+    .p-header-nosotros{
+        font-size: $textSm;
+    }
+}
+@media (max-width: 650px){
+    .equipo-nosotros{
+        article{
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    .equipo-nosotros{
+        article{
+            width: 48%;
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .equipo-nosotros{
+        article{
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            p{
+                font-size: $textMd;
+            }
+        }
+    }
+    .h1-header-nosotros{
+        font-size: $textLg;
+    }
+    .p-header-nosotros{
+        margin-left: 70px;
+        margin-right: 10px;
+    }
+}
+//Termina CSS Nosotros

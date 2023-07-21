@@ -1,0 +1,359 @@
+@import "_vars";
+//Comienza CSS Productos
+.h1-productos{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $secondaryColor;
+  }
+  .separador{
+    background-color: $secondaryColor;
+    width: 100%;
+    height: 30px;
+  }
+  .ver-mas{
+    display: flex;
+    justify-content: center;
+    button{
+        border: none;
+        background-color: $buttonColor;
+        padding: 3px;
+        color: $white;
+        border-radius:  4px;
+        margin: 10px 0;
+        &:hover{
+            background-color: $buttonHoverColor;
+        }
+        &:active{
+            background-color: $secondaryColor;
+            color: black;
+        }
+    }
+}
+//Comienza CSS Camisetas
+.camisetas{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure{
+        width: 30%;
+        border: solid 1px $mainColor;
+        margin-bottom: 20px;
+       padding: 10px 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       border-radius: 4px;
+        img{
+            width: 30%;
+        }
+        figcaption{
+            color: $figcaptionColor;
+            font-size: $figcaptionText;  
+        }
+        p{
+            text-align: center; 
+        }
+        button{
+            border: none;
+            background-color: $buttonColor;
+            padding: 6px;
+            color: $white;
+            border-radius:  4px;
+            margin: 10px 0;
+            &:hover{
+                background-color: $buttonHoverColor;
+            }
+            &:active{
+                background-color: $secondaryColor;
+                color: black;
+            }
+        }
+    }
+  }
+  .fondo-camisetas{
+    background-color: $backgroundColor;
+    height: 30%;
+}
+.h2-camisetas{
+    color: $keyColor;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+@media (max-width: 1049px) {
+
+    .camisetas{
+
+        figure{
+            p{
+                font-size: $textSm;  
+            }
+            figcaption{
+                    font-size: $textLg;
+            }
+        } 
+    }
+}
+@media (max-width: 972px) {
+    .camisetas{
+        padding: 20px 0px;
+        figure{
+            p{
+                font-size: $textSm;
+            }
+            figcaption{
+                font-size: $textMd;
+            }
+        }
+      }
+}
+@media (max-width: 890px) {
+    .camisetas{
+        padding: 20px 0px;
+        figure{
+            width: 48%;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .camisetas{
+        figure{
+            width: 100%;
+            figcaption{
+                font-size: $textMd-Lg;
+            }
+        }
+      }
+}
+//Termina CSS Camisetas
+//Comienza CSS Pantalones
+.pantalones{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure{
+        width: 30%;
+        border: solid 1px $mainColor;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        img{
+            width: 30%;
+        }
+        figcaption{
+            color: $figcaptionColor;
+            font-size: $figcaptionText; 
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: $buttonColor;
+            padding: 6px;
+            color: $white;
+            border-radius:  4px;
+            margin: 10px 0;
+            &:hover{
+                background-color: $buttonHoverColor;
+            }
+            &:active{
+                background-color: $secondaryColor;
+                color: black;
+            }
+        }
+    }
+}
+.fondo-pantalones{
+    background-color:  $backgroundColor;
+    height: 30%;
+}
+.h2-pantalones{
+    color: $keyColor;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+@media (max-width: 1049px){
+    .pantalones{
+        figure{
+            figcaption{
+                font-size: $textLg;
+            }
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+}
+@media (max-width: 972px){
+    .pantalones{
+        padding: 20px 0px;
+        figure{
+            p{
+                font-size: $textSm;  
+            }
+            figcaption{
+                font-size: $textMd-Lg; 
+            }
+        }
+    }
+}
+@media (max-width: 890px){
+    .pantalones{
+        figure{
+            width: 48%;
+        }
+    }
+}
+@media (max-width: 572px){
+    .pantalones{
+        figure{
+            figcaption{
+                font-size: $textMd;
+            }
+        }
+    }
+}
+@media (max-width: 540px){
+    .pantalones{
+        figure{
+            width: 100%;
+            figcaption{
+                font-size: $textLg;
+            }
+        }
+    }
+}
+//Termina CSS Pantalones
+//Comienza CSS Medias
+.grid{
+    width: 100%;
+    display: grid;
+    figure{
+        width: 100%;
+        border: solid 1px $mainColor;
+        margin-bottom: 20px;
+       padding: 10px 10px;
+       align-items: center;
+       justify-content: center;
+       border-radius: 4px;
+       display: flex;
+       flex-direction: column;
+        img{
+            width: 30%;
+        }
+        figcaption{
+            color: $figcaptionColor;
+            font-size: 1.4em;  
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color:  $buttonColor;
+            padding: 6px;
+            color: $white;
+            border-radius:  4px;
+            margin: 10px 0;
+            &:hover{
+                background-color: #132738;
+            }
+            &:active{
+                background-color: $secondaryColor;
+                color: black;
+            }
+        }
+    }
+}
+.grid-template-colums-row{
+    grid-template-columns: 50% 50%;
+    row-gap: 2px;
+    column-gap: 10px;
+}
+.fondo-medias{
+    background-color: $backgroundColor;
+    height: 30%;
+}
+.h2-medias{
+    color: $keyColor;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.section-medias{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 58px;
+}
+@media (max-width: 1049px) {
+
+    .grid{
+        figure{
+            figcaption{
+                font-size: $textLg;
+            }
+            p{
+                font-size: $textSm;  
+            }
+        }
+    }
+}
+@media (max-width: 972px) {
+    .grid{
+        padding: 20px 0px;
+        figure{
+            p{
+                font-size: $textSm; 
+            }
+            figcaption{
+                font-size: $textMd-Lg;
+            }
+        }
+      }
+}
+@media (max-width: 760px) {
+    .section-medias{
+        padding-left: 30px;
+        padding-right: 38px;
+    }
+}
+@media (max-width: 572px) {
+
+    .grid{
+        figure{
+            figcaption{
+                font-size: $textMd;
+            }
+        }
+      }
+    .section-medias{
+        padding-left: 20px;
+        padding-right: 28px;
+    }
+}
+@media (max-width: 540px) {
+    .grid-template-colums-row{
+        grid-template-columns: 100%;
+    }
+    .grid{ 
+        figure{ 
+            figcaption{
+                font-size: $textMd-Lg;
+            } 
+        }
+    }
+}

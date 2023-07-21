@@ -1,0 +1,105 @@
+@import "_vars";
+
+//Empieza CSS promociones
+.fondo-promo{
+    background-color: $backgroundColor;
+    height: 30%;
+}
+.productos-promociones{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productos-promociones{
+    figure{
+        width: 30%;
+        border: solid 1px $mainColor;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        img{
+            width: 25%;
+        }
+        figcaption{
+            color: $figcaptionColor;
+            font-size: $figcaptionText;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: $buttonColor;
+            padding: 6px;
+            color: $white;
+            border-radius:  4px;
+            margin: 10px 0;
+            &:hover{
+                background-color: $buttonHoverColor;
+            }
+            &:active{
+                background-color: $secondaryColor;
+                color: black;
+            }
+        }
+    }
+}
+@media (max-width: 1049px) {
+
+    .productos-promociones{ 
+        figure{ 
+            figcaption{
+                font-size: $textLg;
+            } 
+            p{
+                font-size: $textSm;  
+            }
+        }
+    }
+}
+@media (max-width: 972px) {
+    .productos-promociones{
+        padding: 20px 0px;
+        figure{
+            p{
+                font-size: 1em;  
+            }
+            figcaption{
+                font-size: 1.2em;
+            }
+        }
+      }
+}
+@media (max-width: 890px) {
+    .productos-promociones{ 
+        figure{
+            width: 48%;
+        }
+    }
+}
+@media (max-width: 572px) {
+
+    .productos-promociones{ 
+        figure{ 
+            figcaption{
+                font-size: 1.1em;
+            }
+        }
+    } 
+}
+@media (max-width: 540px) {
+    .productos-promociones{ 
+        figure{
+            width: 100%;
+            figcaption{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+//Termina CSS promociones

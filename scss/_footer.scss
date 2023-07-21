@@ -1,0 +1,47 @@
+@import "_vars";
+footer{
+    background-color: $footerColor;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.mapa{
+    padding: 10px;
+}
+.logos{
+    padding: 10px;
+}
+footer {
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: rgb(31, 29, 29);
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+.logos{ 
+    a{
+        text-decoration: none;
+}
+}
+@media (max-width: 786px) {
+    .terminos-y-copyright, .terminos-y-copyright2 {
+      display: none;
+    }
+    .mapa{
+        width: 150px;
+        height: 150px;
+    }
+  }
+  @media (max-width: 290px) {
+    .mapa{
+        width: 140px;
+        height: 140px;
+    }
+  }
+ 
