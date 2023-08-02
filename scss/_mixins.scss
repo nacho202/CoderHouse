@@ -1,0 +1,39 @@
+@import "_vars";
+//extends
+.btn-gral{
+    border: none;
+    background-color: $buttonColor;
+    padding: 6px;
+    color: $white;
+    border-radius:  4px;
+    margin: 10px 0;
+    &:hover{
+        background-color: $buttonHoverColor;
+    } 
+    &:active{
+        background-color: $secondaryColor;
+        color: black;
+    }
+}
+.btn-rounded{
+    border: none;
+        background-color: rgb(0, 153, 255);
+        padding: 6px 15px 6px 15px;
+        color: $white;
+        border-radius:  36px;
+        margin-top: 10px;
+        &:hover{
+            background-color: rgb(9, 119, 192);
+        }
+        &:active{
+            background-color: rgb(23, 110, 168);
+        }
+}
+//mixins
+@mixin textos($size,$line,$color,$padding){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    padding: $padding;
+}
+//maps

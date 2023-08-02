@@ -1,6 +1,9 @@
 @import "_vars";
 
 //Empieza CSS promociones
+.header-promociones{
+    width: 100%;
+}
 .fondo-promo{
     background-color: $backgroundColor;
     height: 30%;
@@ -23,7 +26,7 @@
         justify-content: center;
         border-radius: 4px;
         img{
-            width: 25%;
+            width: 30%;
         }
         figcaption{
             color: $figcaptionColor;
@@ -79,6 +82,9 @@
     .productos-promociones{ 
         figure{
             width: 48%;
+            img{
+                width: 35%;
+            }
         }
     }
 }
@@ -96,6 +102,9 @@
     .productos-promociones{ 
         figure{
             width: 100%;
+            img{
+                width: 40%;
+            }
             figcaption{
                 font-size: 1.2em;
             }

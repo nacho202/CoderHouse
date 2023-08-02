@@ -1,0 +1,91 @@
+@import "_vars";
+.contenido-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+}
+.foto-error{
+    padding: 46px 35px 46px 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+.section-error{
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        margin-bottom: 6px;
+        font-weight: $textBols;
+    }
+    p{
+        margin-bottom: 10px;
+        font-size: $textMd;
+    }
+}
+@media (max-width: 830px){
+    .foto-error{
+        img{
+          width: 85%;
+        }
+    }
+    .section-error{
+        h2{
+          font-size: $textXl;  
+        }
+        p{
+            font-size: $textSm;
+        }
+    }
+}
+@media (max-width: 800px){
+    .foto-error{
+        padding: 40px 5px 40px 5px;
+    }
+    .section-error{
+        padding: 30px;
+        
+    }
+}
+@media (max-width: 786px){
+    .contenido-error{
+        display: contents;
+    }
+    .foto-error{
+        padding: 20px 5px;
+        img{
+            width: 30%;
+        }
+    }
+    .section-error{
+        padding: 15px;
+    }
+}
+@media (max-width: 520px){
+    .foto-error{
+        padding: 20px 5px;
+        img{
+            width: 40%;
+        }
+    }
+    .section-error{
+        padding: 15px 15px 30px 15px;
+        h2{
+            font-size: $textLg;
+        }
+    }
+}
+@media (max-width: 340px){
+    .foto-error{
+        padding: 20px 5px;
+        img{
+            width: 50%;
+        }
+    }
+    .section-error{
+        padding: 15px 15px 30px;
+        font-size: $textSm;
+    }
+}

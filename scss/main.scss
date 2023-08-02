@@ -1,12 +1,14 @@
 //partials
-@import "_nav";
 @import "_vars";
+@import "_nav";
 @import "_commons";
 @import "_footer";
 @import "_promociones";
 @import "_productos";
 @import "_nosotros";
 @import "_contacto";
+@import "_error-404";
+@import "_mixins";
 
 *{
     margin: 0;
@@ -22,10 +24,17 @@
     background-color: $texto1Color;
     h2{
         text-align: center;
+        padding-top: 15px;
+        font-weight: $textBols;
     }
     p{
+        @include textos(1em,1.4em,$keyColor,4px);
         text-align: center;
         margin-bottom: 0%;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     }
 }
 //Productos destacados

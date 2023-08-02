@@ -11,7 +11,11 @@
     border-color: $grisColor ;
     color: $keyColor;
     &:hover{
-        background-color: $keyColor;
+        background-color: $grisColor;
         border: $keyColor;
+    }
+    &:active{
+        background-color: $keyColor !important;
+        border: $keyColor !important; 
     }
 }

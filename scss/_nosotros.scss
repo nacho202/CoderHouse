@@ -14,37 +14,48 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     text-align: center;
+    
 }
 .equipo-nosotros{
     h2{
         text-align: center;
         padding-top: 8px;
-        padding-bottom: 40px;  
+        padding-bottom: 20px;  
     }
+    .equipo-div{
+        display: flex;
     article{
-        display: inline-block;
-        width: 32%;
-        padding-bottom: 40px;
-        padding-left: 30px;
+        width: 80%;
+        padding: 10px 0px 15px 0px;
         text-align: center;
+        justify-content: center;
         img{
-            width: 100%;  
+            width: 80%;
         }
         p{
-            padding-top: 15px;
+            padding: 15px 10px 0px 10px;
+            margin: 0%;
         }
     }
+ }
 }
 @media (max-width: 900px) {
     .equipo-nosotros{
         padding: 20px 0px 20px 0px;
+        .equipo-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         article{
-            p{
-                font-size: $textSm;
+            img{
+                width: 65%;
             }
         }
+     }
     }
     .h1-header-nosotros{
         font-size: $textXl;
@@ -57,38 +68,57 @@
     .equipo-nosotros{
         article{
             p{
-                font-size: $textSm;
+                font-size: 1em;
             }
         }
     }
 }
 @media (max-width: 600px){
     .equipo-nosotros{
+        .equipo-div{
         article{
-            width: 48%;
-            p{
-                font-size: $textSm;
+            img{
+                width: 80%;
             }
-        }
-    }
-}
-@media (max-width: 500px){
-    .equipo-nosotros{
-        article{
-            width: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
             p{
                 font-size: $textMd;
             }
         }
     }
+    }
+}
+@media (max-width: 500px){
+    .equipo-nosotros{
+        .equipo-div{
+        article{
+            padding-left: 10px;
+            padding-right: 10px;
+            img{
+                width: 75%;
+            }
+            p{
+                font-size: $textSm;
+            }
+        }
+    }
+    }
     .h1-header-nosotros{
         font-size: $textLg;
     }
-    .p-header-nosotros{
-        margin-left: 70px;
-        margin-right: 10px;
+}
+@media (max-width: 360px){
+    .equipo-nosotros{
+        .equipo-div{
+        article{
+            width: 90%;
+            img{
+                width: 80%;
+            }
+            p{
+                font-size: 0.85em;
+            }
+        }
+    }
     }
 }
 //Termina CSS Nosotros
